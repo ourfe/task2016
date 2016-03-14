@@ -1,0 +1,156 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#container {
+  min-width: 1280px;
+  font: 14px 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Microsoft Yahei', simsun, sans-serif;
+  color: #777; }
+
+.nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav h1 {
+    font-size: 20px;
+    background: #fff url("../images/nav-logo.png") no-repeat;
+    background-size: 32px;
+    padding-left: 42px;
+    margin-left: 60px; }
+  .nav ul {
+    margin-right: 67px; }
+    .nav ul li {
+      height: 60px;
+      line-height: 60px;
+      display: inline-block; }
+      .nav ul li:first-child {
+        border-bottom: 4px solid #ed8476;
+        height: 57px; }
+      .nav ul li:not(:last-child) {
+        margin-right: 36px; }
+      .nav ul li:last-child {
+        margin-left: 40px;
+        padding-left: 21px;
+        background: #fff url("../images/nav-user.png") no-repeat 0% 50%;
+        background-size: 15px; }
+        .nav ul li:last-child a {
+          color: #ed8476; }
+
+.slogan {
+  height: 690px;
+  background: #fff url("../images/slogan-bg.png") no-repeat;
+  background-size: cover; }
+  .slogan .inner {
+    margin-left: 117px; }
+    .slogan .inner .title {
+      font-size: 48px;
+      color: #fff;
+      padding-top: 230px;
+      margin: 0 0 30px; }
+    .slogan .inner .detail {
+      font-size: 20px;
+      color: #fff;
+      margin: 0 0 12px 9px; }
+    .slogan .inner .start-btn {
+      margin-top: 68px; }
+    .slogan .inner a {
+      display: block;
+      width: 330px;
+      height: 64px;
+      line-height: 64px;
+      border-radius: 2px;
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+      background-color: #e7504d; }
+
+.advancement {
+  height: 250px;
+  padding-top: 45px; }
+  .advancement .list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around; }
+    .advancement .list .list-item {
+      width: 25%;
+      padding-top: 90px;
+      text-align: center; }
+      .advancement .list .list-item:first-child {
+        background: #fff url("../images/advancement-1.png") no-repeat 50% 0%; }
+      .advancement .list .list-item:nth-child(2) {
+        background: #fff url("../images/advancement-2.png") no-repeat 50% 0%; }
+      .advancement .list .list-item:nth-child(3) {
+        background: #fff url("../images/advancement-3.png") no-repeat 50% 0%; }
+      .advancement .list .list-item:last-child {
+        background: #fff url("../images/advancement-4.png") no-repeat 50% 0%; }
+      .advancement .list .list-item:not(:last-child) .inner {
+        border-right: 2px solid #999; }
+      .advancement .list .list-item .inner {
+        height: 50px; }
+      .advancement .list .list-item p {
+        margin: 5px; }
+
+.question {
+  height: 360px;
+  background-color: #ededec; }
+  .question .item {
+    font-size: 50px;
+    padding-top: 230px;
+    text-align: center;
+    background: #ededec url("../images/question-logo.png") no-repeat 50%; }
+
+.search {
+  height: 340px;
+  background: #fff url("../images/search-bg.jpg") no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .search .title {
+    margin: 0 0 32px;
+    padding-top: 52px;
+    color: #fff; }
+  .search .info {
+    color: #fff;
+    margin-bottom: 52px; }
+  .search form {
+    display: flex;
+    justify-content: center; }
+  .search .form-item {
+    margin-right: 12px;
+    margin-top: 2px; }
+    .search .form-item.active {
+      border: 2px solid #be4f48;
+      margin-top: 0; }
+  .search select {
+    width: 235px;
+    height: 35px;
+    padding-left: 12px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+    background: #fff;
+    border: none;
+    background: #fff url("../images/select-bg.png") no-repeat 95% 50%; }
+    .search select option {
+      width: 235px;
+      height: 35px;
+      background: #be4f48; }
+  .search a {
+    display: inline-block;
+    width: 235px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    background: #be4f48; }
+
+/*# sourceMappingURL=style.css.map */
