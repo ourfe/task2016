@@ -151,6 +151,7 @@ body {
   background-color: #ededec; }
   .question .item {
     font-size: 50px;
+    margin-top: 0;
     padding-top: 230px;
     text-align: center;
     background: #ededec url("../images/question-logo.png") no-repeat 50%; }
