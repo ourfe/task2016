@@ -97,6 +97,14 @@ body {
 					color: #ed8476;
 				}
 			}
+			a {
+				display: inline-block;
+				height: 60px;
+				line-height: 60px;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
 		}
 	}
 }
@@ -122,18 +130,19 @@ body {
 		}
 		.start-btn {
 			margin-top: 68px;
-		}
-		a {
 			display: block;
 			width: 330px;
 			height: 64px;
 			line-height: 64px;
 			border-radius: 2px;
 			text-align: center;
-
 			font-size: 28px;
 			color: #fff;
 			background-color: #e7504d;
+			&:hover {
+				background: #f8615e;
+			}
+
 		}
 	}
 }
@@ -284,6 +293,9 @@ body {
 		text-align: center;
 		color: #fff;
 		background: #be4f48;
+		&:hover {
+			background: #cf5f59;
+		}
 	}
 }
 
@@ -354,6 +366,10 @@ body {
 		border: 2px solid #e46868;
 		color: #e46868;
 		margin: 50px auto 0;
+		&:hover {
+			background: #e46868;
+			color: #fff;
+		}
 	}
 }
 
@@ -438,6 +454,9 @@ body {
 			.view-more {
 				color: #e7504d;
 				border-color: #e7504d;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -624,6 +643,9 @@ body {
 		margin-top: 36px;
 		li {
 			margin-right: 25px;
+			&:hover {
+				opacity: .8;
+			}
 		}
 	}
 }
