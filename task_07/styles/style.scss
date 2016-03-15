@@ -1,3 +1,5 @@
+// common
+
 * {
 	box-sizing: border-box;
 }
@@ -33,9 +35,15 @@ body {
 
 .nav {
 	height: 60px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	h1 {
 		font-size: 20px;
 		background: #fff url('../images/nav-logo.png') no-repeat;
@@ -51,7 +59,7 @@ body {
 			display: inline-block;
 			&:first-child {
 				border-bottom: 4px solid #ed8476;
-				height: 57px;
+				height: 60px;
 			}
 			&:not(:last-child) {
 				margin-right: 36px;
@@ -112,9 +120,15 @@ body {
 	height: 250px;
 	padding-top: 45px;
 	.list {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: flex-end;
-		justify-content: space-around;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
 		.list-item {
 			width: 25%;
 			padding-top: 90px;
@@ -181,8 +195,12 @@ body {
 		margin-bottom: 52px;
 	}
 	form {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	.form-item {
 		margin-right: 12px;
@@ -226,8 +244,12 @@ body {
 	height: 605px;
 	background: #f7f7f7;
 	padding-top: 100px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 
 	img {
 		padding: 14px 7px;
@@ -257,6 +279,8 @@ body {
 // view-detail
 
 .view-detail {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	.inner-container {
 		h2 {
@@ -285,16 +309,18 @@ body {
 }
 
 .view-detail-one {
-	height: 100%;
-	width: 100%;
 	min-height: 567px;
 	.img-container {
-		flex: 2 0 850px;
+		-webkit-flex: 2 0 850px;
+		    -ms-flex: 2 0 850px;
+		        flex: 2 0 850px;
 		background: #fff url('../images/model1.png') no-repeat;
 		background-size: cover;
 	}
 	.inner-container {
-		flex: 1 0 430px;
+		-webkit-flex: 1 1 430px;
+		    -ms-flex: 1 1 430px;
+		        flex: 1 1 430px;
 		padding: 165px 70px 0;
 		h2 {
 			margin-bottom: 32px;
@@ -320,7 +346,9 @@ body {
 .view-detail-two {
 	height: 521px;
 	.inner-container {
-		flex: 1 0 430px;
+		-webkit-flex: 1 0 430px;
+		    -ms-flex: 1 0 430px;
+		        flex: 1 0 430px;
 		padding-top: 175px;
 		h2 {
 			font-size: 22px;
@@ -353,7 +381,9 @@ body {
 			}
 		}
 		&:nth-child(2) {
-			flex: 1 0 420px;
+			-webkit-flex: 1 0 420px;
+			    -ms-flex: 1 0 420px;
+			        flex: 1 0 420px;
 			color: #000;
 
 			h2 {
@@ -369,21 +399,22 @@ body {
 		}
 	}
 	.img-container {
-		flex: 1 0 430px;
-		// min-width: 430px;
+		-webkit-flex: 1 0 430px;
+		    -ms-flex: 1 0 430px;
+		        flex: 1 0 430px;
 		background: #fff url('../images/model2.png') no-repeat;
 		background-size: cover;
 		position: relative;
 		&:before {
 			position: absolute;
 			top: 50%;
-			left: 30px;
+			left: 0;
+			-webkit-transform: translateY(-50%);
+			        transform: translateY(-50%);
 			content: '';
-			background: #fff;
-			border: 30px solid #fff;
-			border-top-width: 0;
-			border-bottom-width: 0;
-			border-right-width: 0;
+			border-top: 20px solid transparent;
+		    border-left: 20px solid #fff;
+		    border-bottom: 20px solid transparent;
 		}
 	}
 }
@@ -407,11 +438,17 @@ body {
 	}
 	.inner-container {
 		margin-top: 110px;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		padding: 0 142px;
 		.info {
-			flex: 1 0 288px;
+			-webkit-flex: 1 0 288px;
+			    -ms-flex: 1 0 288px;
+			        flex: 1 0 288px;
 			margin-right: 75px;
 
 			li {
@@ -435,13 +472,23 @@ body {
 			}
 		}
 		.infomation {
-			flex: 1 0 640px;
+			-webkit-flex: 1 0 640px;
+			    -ms-flex: 1 0 640px;
+			        flex: 1 0 640px;
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
 
 			input[type='text'] {
-				flex: 2 1 310px;
+				-webkit-flex: 2 1 310px;
+				    -ms-flex: 2 1 310px;
+				        flex: 2 1 310px;
 				// min-width: 310px;
 				max-height: 40px;
 				border: none;
@@ -456,7 +503,9 @@ body {
 				}
 			}
 			textarea {
-				flex: 2 1 640px;
+				-webkit-flex: 2 1 640px;
+				    -ms-flex: 2 1 640px;
+				        flex: 2 1 640px;
 				width: 640px;
 				height: 120px;
 				padding: 20px;
@@ -467,7 +516,9 @@ body {
 				resize: none;  //右下角的东东
 			}
 			input[type='submit'] {
-				flex: 2 1 640px;
+				-webkit-flex: 2 1 640px;
+				    -ms-flex: 2 1 640px;
+				        flex: 2 1 640px;
 				max-height: 40px;
 				outline: none;
 				border: none;
@@ -499,6 +550,8 @@ body {
 		margin: 0 0 8px;
 	}
 	form {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 		width: 510px;
 		height: 40px;
@@ -519,8 +572,12 @@ body {
 		}
 	}
 	ul {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		margin-top: 36px;
 		li {
 			margin-right: 25px;
@@ -536,9 +593,17 @@ body {
 	background: #303039;
 	color: #fff;
 
+	display: -webkit-flex;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 
 	a {
 		display: block;
