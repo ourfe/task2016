@@ -81,16 +81,19 @@ body {
 			height: 60px;
 			line-height: 60px;
 			display: inline-block;
-			&:first-child {
+			padding: 0 20px;
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+			&.active {
 				border-bottom: 4px solid #ed8476;
 				height: 61px;
-			}
-			&:not(:last-child) {
-				margin-right: 36px;
+				margin-right: 10px;
 			}
 			&:last-child{
-				margin-left: 40px;
+				margin-left: 4px;
 				padding-left: 21px;
+				padding-right: 0;
 				background: #fff url('../images/nav-user.png') no-repeat 0% 50%;
 				background-size: 15px;
 				a {
@@ -634,6 +637,10 @@ body {
 			width: 80px;
 			background: #696266;
 			color: #fff;
+			cursor: pointer;
+			&:hover {
+				background: #7a7377;
+			}
 		}
 	}
 	ul {
