@@ -1,3 +1,6 @@
+$navBackGround: #2b2f3d;
+$navHoverBackGround: #393d4e;
+
 * {
 	box-sizing: border-box;
 }
@@ -52,16 +55,140 @@ a:active {
 .left-part {
 	width: 260px;
 	height: 100vh;
-	background-color: #2b2f3d;
+	background-color: $navBackGround;
 	display: flex;
 	flex-direction: column;
+	.user-info {
+		height: 150px;
+		background: #2b2f3d;
+		padding: 18px 0 0 45px;
+	}
 	.avatar-container {
+		display: flex;
+		align-items: center;
 		img {
 			width: 48px;
 			height: 48px;
 			padding: 3px;
 			border-radius: 50%;
 			border: 2px solid #ddd;
+		}
+		span {
+			color: #fff;
+			margin-left: 15px;
+		}
+	}
+	.detail {
+		color: #6e8098;
+		margin-top: 23px;
+		padding-left: 18px;
+		li {
+			display: inline-block;
+			padding-right: 30px;
+			span {
+				display: block;
+				margin-bottom: 5px;
+			}
+			&+li {
+				padding-left: 30px;
+				border-left: 2px solid #323646;
+			}
+		}
+	}
+	nav {
+		li {
+			color: #6e8095;
+			cursor: pointer;
+			ul {
+				display: none;
+			}
+			&:hover {
+				& > ul {
+					display: block;
+				}
+			}
+		}
+		& > ul > li {
+			padding-left: 46px;
+			line-height: 36px;
+			& > ul {
+				padding-left: 25px;
+				li {
+					img {
+						margin-right: 10px;
+					}
+					span {
+						padding-left: 20px;
+						background: $navHoverBackGround url('../images/icon-folder.png') no-repeat 0 50%;
+					}
+					ul {
+						padding-left: 32px;
+
+					}
+					li {
+						padding-left: 16px;
+						background: $navHoverBackGround url('../images/icon-doc.png') no-repeat 0 50%;
+					}
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+			&:first-child > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-chart.png') no-repeat 0 50%;
+			}
+			&:nth-child(2) > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-star.png') no-repeat 0 50%;
+			}
+			&:nth-child(3) > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-sharing.png') no-repeat 0 50%;
+			}
+			&:nth-child(4) > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-star.png') no-repeat 0 50%;
+			}
+			&:nth-child(5) > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-star.png') no-repeat 0 50%;
+			}
+			&:last-child > span {
+				padding-left: 25px;
+				background: $navBackGround url('../images/icon-account.png') no-repeat 0 50%;
+			}
+			&:hover {
+				color: #fff;
+				background: $navHoverBackGround;
+				&:first-child > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-chart.png') no-repeat 0 50%;
+				}
+				&:nth-child(2) > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
+				}
+				&:nth-child(3) > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-sharing.png') no-repeat 0 50%;
+				}
+				&:nth-child(4) > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
+				}
+				&:nth-child(5) > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
+				}
+				&:last-child > span {
+					padding-left: 25px;
+					background: $navHoverBackGround url('../images/icon-account.png') no-repeat 0 50%;
+				}
+			}
+		}
+		.second-class-list {
+
 		}
 	}
 }
