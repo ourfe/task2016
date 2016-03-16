@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#header {
+	height: 150px;
+}
+#supHeader {
+	height: 25%;
+	border-bottom: 1px solid rgb(233, 234, 234);
+}
+#logo {
+	position: relative;
+	left: 25px;
+}
+#info {
+	float: right;
+	margin-right: 60px;
+	list-style: none;
+	display: inline-block;
+}
+#info li {
+	float: left;
+
+	line-height: 10px;
+	margin: 0 20px;
+	font-family: "微软雅黑";
+}
+#info a {
+	text-decoration: none;
+	color: black;
+}
+#subHeader p {
+	font-size: 30px;
+	text-align: center;
+}
+#subHeader a {
+	color: black;
+	text-decoration: none;
+}
+#content {
+	max-width: 1400px; 
+	height: 1400px;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(233, 234, 234);
+}
+#phase1 {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+#phase1 .task {
+	float: left;
+	width: 22%;
+	height: 19.7%;
+	margin: 10px 1.48%;
+	background-color: white;
+}
+#phase1:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+#introduction {
+	width: 70%;
+	text-align: center;
+	margin: 10px auto;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+#introduction h2 {
+	text-align: center;
+	color: rgb(32, 64, 86);
+	font-family:  Helvetica, sans-serif;
+	margin: 0;
+}
+#introduction p{
+	font-family:  Helvetica, sans-serif;
+}
+.task img {
+	position: relative;
+	left: 50%;
+	margin-top: 20px;
+	margin-left: -65px;
+	width: 130px;
+	height: 130px;
+	// 兼容IE
+	border:none;
+}
+.task p {
+	font-size: 16px;
+	font-family:  Helvetica, sans-serif;
+	color: rgb(10, 10, 10);
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 30px;
+}
+#footer {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	/*同级div之间存在间隙*/
+	margin-top: -16px;
+	background-color: rgb(212, 213, 214);
+}
+#footer p {
+	text-align: center;
+	font-size: 15px;
+	font-family: Helvetica, sans-serif;
+	line-height: 30px;
+}
+#footer a {
+	text-decoration: none;
+	color: black;
+}
