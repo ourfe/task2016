@@ -87,8 +87,10 @@ body {
 	margin-left: -65px;
 	width: 130px;
 	height: 130px;
-	// 兼容IE
-	border:none;
+}
+ /*兼容IE8*/
+img {
+	border-style: none;
 }
 .task p {
 	font-size: 16px;
