@@ -5,41 +5,36 @@ body {
 #header {
 	height: 150px;
 }
-#supHeader {
+.supHeader {
 	height: 25%;
 	border-bottom: 1px solid rgb(233, 234, 234);
 }
-#logo {
+.sup-header img {
 	position: relative;
 	left: 25px;
 }
-#info {
+.sup-header ul {
 	float: right;
 	margin-right: 60px;
 	list-style: none;
 	display: inline-block;
 }
-#info li {
+.sup-header li {
 	float: left;
-
 	line-height: 10px;
 	margin: 0 20px;
 	font-family: "微软雅黑";
 }
-#info a {
+a {
 	text-decoration: none;
 	color: black;
 }
-#subHeader p {
+.sub-header p {
 	font-size: 30px;
 	text-align: center;
 }
-#subHeader a {
-	color: black;
-	text-decoration: none;
-}
 #content {
-	max-width: 1400px; 
+	max-width: 3000px; 
 	height: 1400px;
 	margin: 0;
 	padding: 0;
@@ -59,25 +54,33 @@ body {
 	margin: 10px 1.48%;
 	background-color: white;
 }
+.task a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.task a:hover {
+	background-color: rgb(32, 64, 86);
+}
 #phase1:after {
 	content: " ";
 	display: block;
 	clear: both;
 }
-#introduction {
+.introduction {
 	width: 70%;
 	text-align: center;
 	margin: 10px auto;
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
-#introduction h2 {
+.introduction h2 {
 	text-align: center;
-	color: rgb(32, 64, 86);
+	color: rgb();
 	font-family:  Helvetica, sans-serif;
 	margin: 0;
 }
-#introduction p{
+.introduction p{
 	font-family:  Helvetica, sans-serif;
 }
 .task img {
