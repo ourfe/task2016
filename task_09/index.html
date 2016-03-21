@@ -39,13 +39,13 @@
 						<span>个人报表</span>
 						<ul>
 							<li><img src="images/arrow.png"><span>文件一</span></li>
-							<li><img src="images/arrow.png"><span>文件二</span>
+							<li><img src="images/arrow.png"><span>文件二</span></li>
+							<li><img src="images/arrow.png"><span>文件三</span>
 								<ul>
 									<li>文档一</li>
 									<li>文档一</li>
 								</ul>
 							</li>
-							<li><img src="images/arrow.png"><span>文件三</span></li>
 						</ul>
 					</li>
 					<li><span>个人分享</span></li>
@@ -57,7 +57,101 @@
 			</nav>
 		</section>
 		<section class="right-part">
+			<nav>
+				<ul>
+					<li><a href="#">AC</a></li>
+					<li> / </li>
+					<li><a href="#">个人报表</a></li>
+					<li> / </li>
+					<li><a href="#">文件一</a></li>
+					<li> / </li>
+					<li><a href="#" class="active">文档一</a></li>
+				</ul>
+			</nav>
+			<section class="inner-container">
+				<form class="search">
+					<div class="form-group">
+						<label for="item">查询项
+							<select name="item" id="item">
+								<option value="first">第一项</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="seller">买方
+							<select name="seller" id="seller">
+								<option value="first">小A</option>
+							</select>
+						</label>
+						<label for="sellee">卖方
+							<select name="sellee" id="sellee">
+								<option value="first">小C</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-group multiple">
+						<div class="divide">
+							<label for="date">日期
+								<select name="date" id="date">
+									<option value="first">小A</option>
+								</select>
+							</label>
+							<label for="time">总耗时
+								<select name="time" id="time">
+									<option value="first">8 天</option>
+								</select>
+							</label>
+						</div>
+						<div class="divide">
+						<label for="person-num">人数
+							<select name="person-num" id="person-num">
+								<option value="first">10 人</option>
+							</select>
+						</label>
+						<label for="done">成交项
+							<select name="done" id="done">
+								<option value="first">10 项</option>
+							</select>
+						</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button>搜索</button>
+					</div>
+				</form>
 
+				<div class="history">
+					<div class="arrow-left"></div>
+					<div class="item active">
+						<time>10:00 am</time>
+						<span>1200</span>
+					</div>
+					<div class="item">
+						<time>11:00 am</time>
+						<span>1300</span>
+					</div>
+					<div class="item">
+						<time>12:00 am</time>
+						<span>1200</span>
+					</div>
+					<div class="item">
+						<time>01:00 pm</time>
+						<span>1400</span>
+					</div>
+					<div class="item">
+						<time>02:00 pm</time>
+						<span>1500</span>
+					</div>
+					<div class="item">
+						<time>03:00 pm</time>
+						<span>1800</span>
+					</div>
+					<div class="arrow-right"></div>
+					<div class="date">
+						<span>历史查询</span>
+					</div>
+				</div>
+			</section>
 		</section>
 	</section>
 </body>

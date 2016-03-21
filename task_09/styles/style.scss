@@ -50,11 +50,13 @@ a:active {
 .container {
 	width: 1280px;
 	margin: 0 auto;
+	display: flex;
 }
 
 .left-part {
 	width: 260px;
 	height: 100vh;
+	font-size: 12px;
 	background-color: $navBackGround;
 	display: flex;
 	flex-direction: column;
@@ -100,17 +102,28 @@ a:active {
 			color: #6e8095;
 			cursor: pointer;
 			ul {
-				display: none;
+				// display: none;
+				visibility: hidden;
+				max-height: 0;
 			}
 			&:hover {
 				& > ul {
-					display: block;
+					// display: block;
+			    	transition: max-height 2s;
+					visibility: visible;
+					max-height: 3000px;
 				}
 			}
 		}
 		& > ul > li {
 			padding-left: 46px;
-			line-height: 36px;
+			line-height: 46px;
+			&:hover li {
+				line-height: 26px;
+			}
+			&:not(:first-child) {
+				line-height: 46px;
+			}
 			& > ul {
 				padding-left: 25px;
 				li {
@@ -195,4 +208,154 @@ a:active {
 
 .right-part {
 	width: 1020px;
+	background: #eee;
+
+	nav {
+		height: 30px;
+		line-height: 30px;
+		padding-left: 30px;
+		background: #fff;
+		li {
+			display: inline-block;
+			margin-right: 7px;
+			color: #bcbbbb;
+			&:first-child {
+				margin-right: 13px;
+			}
+			a {
+				color: #bcbbbb;
+				&.active {
+					color: #6998c2;
+				}
+			}
+		}
+	}
+	.inner-container {
+		padding: 20px 70px 0 60px;
+		.search {
+			background: #fff;
+			height: 86px;
+			color: #b1b0b0;
+			font-size: 12px;
+			display: flex;
+			padding: 15px 32px;
+			margin-bottom: 10px;
+			border: 1px solid #ddd;
+			select {
+				width: 70px;
+				height: 25px;
+				border: none;
+				outline: none;
+				border: 2px solid #b1b0b0;
+				border-radius: 0;
+				-webkit-appearance: none;
+				color: #000;
+				padding-left: 10px;
+				margin-left: 15px;
+				background: #fff url('../images/select-black.png') no-repeat 48px 8px;
+			}
+			label {
+				display: block;
+				margin-bottom: 10px;
+			}
+			.form-group {
+				&:first-child {
+					margin-right: 38px;
+					select {
+						background: #fff url('../images/select-blue.png') no-repeat 48px 8px;
+					}
+				}
+				&:nth-child(2) {
+					padding-right: 30px;
+					margin-right: 32px;
+					background: #fff url('../images/search-exchange.png') no-repeat 100% 50%;
+					select {
+						width: 120px;
+						background-position: 98px 8px;
+					}
+				}
+				&:nth-child(3) {
+					margin-right: 15px;
+					label {
+						margin-right: 15px;
+					}
+				}
+				&:last-child button {
+					border: none;
+					outline: none;
+					width: 50px;
+					height: 25px;
+					background: #388ac1;
+					color: #fff;
+					border-radius: 2px;
+					cursor: pointer;
+					margin-top: 15px;
+					&:active {
+						background: #499bd2;
+					}
+				}
+			}
+			.multiple {
+				label {
+					display: inline-block;
+				}
+			}
+			#date,
+			#done {
+				width: 120px;
+				background-position: 98px 8px;
+			}
+		}
+
+		.history {
+			display: flex;
+			div {
+				border-top: 1px solid #ddd;
+				border-left: 1px solid #ddd;
+			}
+
+			.arrow-left {
+				width: 30px;
+				height: 64px;
+				background: #fff url('../images/history-arrow-left.png') no-repeat 50% 50%;
+			}
+			.arrow-right {
+				width: 30px;
+				height: 64px;
+				background: #fff url('../images/history-arrow-right.png') no-repeat 50% 50%;
+				margin-left: 5px;
+			}
+			.item {
+				width: 110px;
+				height: 64px;
+				margin-left: 5px;
+				background: #fff;
+				padding: 15px 0 0 28px;
+				time {
+					display: block;
+					font-size: 12px;
+					margin-bottom: 10px;
+				}
+				span {
+					font-size: 18px;
+					color: #ed7118;
+					padding-left: 10px;
+					background: #fff url('../images/history-cash.png') no-repeat 0 50%;
+				}
+				&.active {
+					border-top: 5px solid #4388c9;
+					padding-top: 11px;
+				}
+			}
+			.date {
+				flex: 1;
+				background: #fff;
+				margin-left: 5px;
+				background: #fff url('../images/history-calendar.png') no-repeat 20px 50%;
+				font-size: 14px;
+				padding: 28px 0 0 64px;
+			}
+		}
+	}
+
 }
