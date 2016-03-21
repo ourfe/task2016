@@ -120,26 +120,10 @@ a:active {
 		li {
 			color: #6e8095;
 			cursor: pointer;
-			ul {
-				// display: none;
-				visibility: hidden;
-				max-height: 0;
-			}
-			&:hover {
-				& > ul {
-					// display: block;
-			    	transition: max-height 2s;
-					visibility: visible;
-					max-height: 3000px;
-				}
-			}
 		}
 		& > ul > li {
 			padding-left: 46px;
-			line-height: 46px;
-			&:hover li {
-				line-height: 26px;
-			}
+			line-height: 36px;
 			&:not(:first-child) {
 				line-height: 46px;
 			}
@@ -151,7 +135,7 @@ a:active {
 					}
 					span {
 						padding-left: 20px;
-						background: $navHoverBackGround url('../images/icon-folder.png') no-repeat 0 50%;
+						background: $navBackGround url('../images/icon-folder.png') no-repeat 0 50%;
 					}
 					ul {
 						padding-left: 32px;
@@ -159,16 +143,21 @@ a:active {
 					}
 					li {
 						padding-left: 16px;
-						background: $navHoverBackGround url('../images/icon-doc.png') no-repeat 0 50%;
+						background: $navBackGround url('../images/icon-doc.png') no-repeat 0 50%;
 					}
 					&:hover {
 						color: #fff;
 					}
 				}
 			}
-			&:first-child > span {
-				padding-left: 25px;
-				background: $navBackGround url('../images/icon-chart.png') no-repeat 0 50%;
+			&:first-child {
+				& > span {
+					padding-left: 25px;
+					background: $navBackGround url('../images/icon-chart.png') no-repeat 0 50%;
+				}
+				li.active img {
+					transform: rotate(90deg);
+				}
 			}
 			&:nth-child(2) > span {
 				padding-left: 25px;
@@ -189,34 +178,6 @@ a:active {
 			&:last-child > span {
 				padding-left: 25px;
 				background: $navBackGround url('../images/icon-account.png') no-repeat 0 50%;
-			}
-			&:hover {
-				color: #fff;
-				background: $navHoverBackGround;
-				&:first-child > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-chart.png') no-repeat 0 50%;
-				}
-				&:nth-child(2) > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
-				}
-				&:nth-child(3) > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-sharing.png') no-repeat 0 50%;
-				}
-				&:nth-child(4) > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
-				}
-				&:nth-child(5) > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-star.png') no-repeat 0 50%;
-				}
-				&:last-child > span {
-					padding-left: 25px;
-					background: $navHoverBackGround url('../images/icon-account.png') no-repeat 0 50%;
-				}
 			}
 		}
 		.second-class-list {

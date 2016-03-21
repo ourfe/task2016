@@ -99,18 +99,9 @@ a:active {
   .left-part nav li {
     color: #6e8095;
     cursor: pointer; }
-    .left-part nav li ul {
-      visibility: hidden;
-      max-height: 0; }
-    .left-part nav li:hover > ul {
-      transition: max-height 2s;
-      visibility: visible;
-      max-height: 3000px; }
   .left-part nav > ul > li {
     padding-left: 46px;
-    line-height: 46px; }
-    .left-part nav > ul > li:hover li {
-      line-height: 26px; }
+    line-height: 36px; }
     .left-part nav > ul > li:not(:first-child) {
       line-height: 46px; }
     .left-part nav > ul > li > ul {
@@ -119,17 +110,19 @@ a:active {
         margin-right: 10px; }
       .left-part nav > ul > li > ul li span {
         padding-left: 20px;
-        background: #393d4e url("../images/icon-folder.png") no-repeat 0 50%; }
+        background: #2b2f3d url("../images/icon-folder.png") no-repeat 0 50%; }
       .left-part nav > ul > li > ul li ul {
         padding-left: 32px; }
       .left-part nav > ul > li > ul li li {
         padding-left: 16px;
-        background: #393d4e url("../images/icon-doc.png") no-repeat 0 50%; }
+        background: #2b2f3d url("../images/icon-doc.png") no-repeat 0 50%; }
       .left-part nav > ul > li > ul li:hover {
         color: #fff; }
     .left-part nav > ul > li:first-child > span {
       padding-left: 25px;
       background: #2b2f3d url("../images/icon-chart.png") no-repeat 0 50%; }
+    .left-part nav > ul > li:first-child li.active img {
+      transform: rotate(90deg); }
     .left-part nav > ul > li:nth-child(2) > span {
       padding-left: 25px;
       background: #2b2f3d url("../images/icon-star.png") no-repeat 0 50%; }
@@ -145,27 +138,6 @@ a:active {
     .left-part nav > ul > li:last-child > span {
       padding-left: 25px;
       background: #2b2f3d url("../images/icon-account.png") no-repeat 0 50%; }
-    .left-part nav > ul > li:hover {
-      color: #fff;
-      background: #393d4e; }
-      .left-part nav > ul > li:hover:first-child > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-chart.png") no-repeat 0 50%; }
-      .left-part nav > ul > li:hover:nth-child(2) > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-star.png") no-repeat 0 50%; }
-      .left-part nav > ul > li:hover:nth-child(3) > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-sharing.png") no-repeat 0 50%; }
-      .left-part nav > ul > li:hover:nth-child(4) > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-star.png") no-repeat 0 50%; }
-      .left-part nav > ul > li:hover:nth-child(5) > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-star.png") no-repeat 0 50%; }
-      .left-part nav > ul > li:hover:last-child > span {
-        padding-left: 25px;
-        background: #393d4e url("../images/icon-account.png") no-repeat 0 50%; }
 
 .right-part {
   width: 1020px;
