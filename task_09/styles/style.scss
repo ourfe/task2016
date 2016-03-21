@@ -21,9 +21,15 @@ a:active {
 	min-width: 1280px;
 	height: 56px;
 	background: #2289bf;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	.logo {
 		margin-left: 50px;
 	}
@@ -53,6 +59,8 @@ a:active {
 	width: 1280px;
 	min-height: 1280px;
 	margin: 0 auto;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -61,16 +69,24 @@ a:active {
 	min-height: 1280px;
 	font-size: 12px;
 	background-color: $navBackGround;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	.user-info {
 		height: 150px;
 		background: #2b2f3d;
 		padding: 18px 0 0 45px;
 	}
 	.avatar-container {
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		img {
 			width: 48px;
 			height: 48px;
@@ -240,6 +256,8 @@ a:active {
 			height: 86px;
 			color: #b1b0b0;
 			font-size: 12px;
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
 			padding: 15px 32px;
 			margin-bottom: 10px;
@@ -311,6 +329,8 @@ a:active {
 		}
 
 		.history {
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
 			div {
 				border-top: 1px solid #ddd;
@@ -351,7 +371,9 @@ a:active {
 				}
 			}
 			.date {
-				flex: 1;
+				-webkit-flex: 1;
+				    -ms-flex: 1;
+				        flex: 1;
 				background: #fff;
 				margin-left: 5px;
 				background: #fff url('../images/history-calendar.png') no-repeat 20px 50%;
@@ -366,11 +388,19 @@ a:active {
 				font-size: 12px;
 			}
 			.inner {
+				display: -webkit-flex;
+				display: -ms-flexbox;
 				display: flex;
 				.item {
-					flex: 1 0 200px;
+					-webkit-flex: 1 0 200px;
+					    -ms-flex: 1 0 200px;
+					        flex: 1 0 200px;
+					display: -webkit-flex;
+					display: -ms-flexbox;
 					display: flex;
-					justify-content: space-between;
+					-webkit-justify-content: space-between;
+					    -ms-flex-pack: justify;
+					        justify-content: space-between;
 					height: 72px;
 					background: #fff;
 					margin-right: 30px;
@@ -420,6 +450,8 @@ a:active {
 		}
 
 		.fourth {
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
 			margin-top: 15px;
 			.first,
@@ -440,7 +472,9 @@ a:active {
 				}
 			}
 			.first {
-				flex: 1 0 530px;
+				-webkit-flex: 1 0 530px;
+				    -ms-flex: 1 0 530px;
+				        flex: 1 0 530px;
 				margin-right: 10px;
 				.inner {
 					padding: 12px 22px;
@@ -456,7 +490,8 @@ a:active {
 							border-top-left-radius: 5px;
 							border-top-right-radius: 5px;
 							&.active {
-								transform: translateY(2px);
+								-webkit-transform: translateY(2px);
+								        transform: translateY(2px);
 								background: #fff;
 								border: 1px solid #ddd;
 								border-bottom-width: 0;
@@ -486,7 +521,9 @@ a:active {
 				}
 			}
 			.second {
-				flex: 1 0 350px;
+				-webkit-flex: 1 0 350px;
+				    -ms-flex: 1 0 350px;
+				        flex: 1 0 350px;
 				.inner {
 					padding: 16px 36px;
 					color: #ccc;
@@ -584,6 +621,8 @@ a:active {
 
 		.last {
 			margin-top: 10px;
+			display: -webkit-flex;
+			display: -ms-flexbox;
 			display: flex;
 			h3 {
 				height: 40px;
@@ -598,12 +637,16 @@ a:active {
 			}
 			.calendar {
 				$weekendColor: #cc3024;
-				flex: 1 0 350px;
+				-webkit-flex: 1 0 350px;
+				    -ms-flex: 1 0 350px;
+				        flex: 1 0 350px;
 				border-radius: 10px;
 				border: 1px solid #ddd;
 				background: #fff;
 				margin-right: 12px;
 				.select-group {
+					display: -webkit-flex;
+					display: -ms-flexbox;
 					display: flex;
 					padding: 10px 22px;
 					select {
@@ -699,7 +742,9 @@ a:active {
 				}
 			}
 			.rank {
-				flex: 1 0 520px;
+				-webkit-flex: 1 0 520px;
+				    -ms-flex: 1 0 520px;
+				        flex: 1 0 520px;
 				border-radius: 10px;
 				border: 1px solid #ddd;
 				background: #fff;
@@ -716,26 +761,40 @@ a:active {
 						text-align: center;
 						height: 25px;
 						line-height: 25px;
+						display: -webkit-flex;
+						display: -ms-flexbox;
 						display: flex;
-						align-items: center;
-						justify-content: center;
+						-webkit-align-items: center;
+						    -ms-flex-align: center;
+						        align-items: center;
+						-webkit-justify-content: center;
+						    -ms-flex-pack: center;
+						        justify-content: center;
 					}
 					tr {
+						display: -webkit-flex;
+						display: -ms-flexbox;
 						display: flex;
 					}
 					th,
 					td {
 						&:first-child {
 							// width: 68px;
-							flex: 1 0 68px;
+							-webkit-flex: 1 0 68px;
+							    -ms-flex: 1 0 68px;
+							        flex: 1 0 68px;
 						}
 						&:nth-child(2) {
 							// width: 92px;
-							flex: 1 0 92px;
+							-webkit-flex: 1 0 92px;
+							    -ms-flex: 1 0 92px;
+							        flex: 1 0 92px;
 						}
 						&:last-child {
 							// width: 290px;
-							flex: 1 0 270px;
+							-webkit-flex: 1 0 270px;
+							    -ms-flex: 1 0 270px;
+							        flex: 1 0 270px;
 						}
 					}
 					span {

@@ -16,8 +16,14 @@ a:active {
   min-width: 1280px;
   height: 56px;
   background: #2289bf;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
   .main-header .logo {
     margin-left: 50px; }
@@ -42,6 +48,8 @@ a:active {
   width: 1280px;
   min-height: 1280px;
   margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
 
 .left-part {
@@ -49,14 +57,22 @@ a:active {
   min-height: 1280px;
   font-size: 12px;
   background-color: #2b2f3d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column; }
   .left-part .user-info {
     height: 150px;
     background: #2b2f3d;
     padding: 18px 0 0 45px; }
   .left-part .avatar-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center; }
     .left-part .avatar-container img {
       width: 48px;
@@ -176,6 +192,8 @@ a:active {
       height: 86px;
       color: #b1b0b0;
       font-size: 12px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       padding: 15px 32px;
       margin-bottom: 10px;
@@ -229,6 +247,8 @@ a:active {
         width: 120px;
         background-position: 98px 8px; }
     .right-part .inner-container .history {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
       .right-part .inner-container .history div {
         border-top: 1px solid #ddd;
@@ -261,6 +281,8 @@ a:active {
           border-top: 5px solid #4388c9;
           padding-top: 11px; }
       .right-part .inner-container .history .date {
+        -webkit-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         background: #fff;
         margin-left: 5px;
@@ -271,10 +293,18 @@ a:active {
       margin: 22px 0 5px;
       font-size: 12px; }
     .right-part .inner-container .stat .inner {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
       .right-part .inner-container .stat .inner .item {
+        -webkit-flex: 1 0 200px;
+        -ms-flex: 1 0 200px;
         flex: 1 0 200px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         height: 72px;
         background: #fff;
@@ -310,6 +340,8 @@ a:active {
           .right-part .inner-container .stat .inner .item:last-child .img {
             background: #e2cd47; }
     .right-part .inner-container .fourth {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       margin-top: 15px; }
       .right-part .inner-container .fourth .first,
@@ -329,6 +361,8 @@ a:active {
           color: #ccc;
           border-bottom: 1px solid #ddd; }
       .right-part .inner-container .fourth .first {
+        -webkit-flex: 1 0 530px;
+        -ms-flex: 1 0 530px;
         flex: 1 0 530px;
         margin-right: 10px; }
         .right-part .inner-container .fourth .first .inner {
@@ -345,6 +379,7 @@ a:active {
               border-top-left-radius: 5px;
               border-top-right-radius: 5px; }
               .right-part .inner-container .fourth .first .inner ul li.active {
+                -webkit-transform: translateY(2px);
                 transform: translateY(2px);
                 background: #fff;
                 border: 1px solid #ddd;
@@ -366,6 +401,8 @@ a:active {
               .right-part .inner-container .fourth .first .inner table td:hover {
                 background: #f4f5f6; }
       .right-part .inner-container .fourth .second {
+        -webkit-flex: 1 0 350px;
+        -ms-flex: 1 0 350px;
         flex: 1 0 350px; }
         .right-part .inner-container .fourth .second .inner {
           padding: 16px 36px;
@@ -442,6 +479,8 @@ a:active {
                 background: #499bd2; }
     .right-part .inner-container .last {
       margin-top: 10px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
       .right-part .inner-container .last h3 {
         height: 40px;
@@ -454,12 +493,16 @@ a:active {
         color: #ccc;
         border-bottom: 1px solid #ddd; }
       .right-part .inner-container .last .calendar {
+        -webkit-flex: 1 0 350px;
+        -ms-flex: 1 0 350px;
         flex: 1 0 350px;
         border-radius: 10px;
         border: 1px solid #ddd;
         background: #fff;
         margin-right: 12px; }
         .right-part .inner-container .last .calendar .select-group {
+          display: -webkit-flex;
+          display: -ms-flexbox;
           display: flex;
           padding: 10px 22px; }
           .right-part .inner-container .last .calendar .select-group select {
@@ -532,6 +575,8 @@ a:active {
               display: block;
               font-size: 12px; }
       .right-part .inner-container .last .rank {
+        -webkit-flex: 1 0 520px;
+        -ms-flex: 1 0 520px;
         flex: 1 0 520px;
         border-radius: 10px;
         border: 1px solid #ddd;
@@ -547,19 +592,33 @@ a:active {
             text-align: center;
             height: 25px;
             line-height: 25px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
             justify-content: center; }
           .right-part .inner-container .last .rank .table tr {
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex; }
           .right-part .inner-container .last .rank .table th:first-child,
           .right-part .inner-container .last .rank .table td:first-child {
+            -webkit-flex: 1 0 68px;
+            -ms-flex: 1 0 68px;
             flex: 1 0 68px; }
           .right-part .inner-container .last .rank .table th:nth-child(2),
           .right-part .inner-container .last .rank .table td:nth-child(2) {
+            -webkit-flex: 1 0 92px;
+            -ms-flex: 1 0 92px;
             flex: 1 0 92px; }
           .right-part .inner-container .last .rank .table th:last-child,
           .right-part .inner-container .last .rank .table td:last-child {
+            -webkit-flex: 1 0 270px;
+            -ms-flex: 1 0 270px;
             flex: 1 0 270px; }
           .right-part .inner-container .last .rank .table span {
             height: 25px;
