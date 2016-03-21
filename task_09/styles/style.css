@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 a,
 a:link,
@@ -38,12 +40,13 @@ a:active {
 
 .container {
   width: 1280px;
+  min-height: 1280px;
   margin: 0 auto;
   display: flex; }
 
 .left-part {
   width: 260px;
-  height: 100vh;
+  min-height: 1280px;
   font-size: 12px;
   background-color: #2b2f3d;
   display: flex;
@@ -357,6 +360,7 @@ a:active {
               width: 100px;
               height: 30px;
               line-height: 30px;
+              font-size: 14px;
               border: 1px solid #ddd;
               text-align: center; }
               .right-part .inner-container .fourth .first .inner table td:hover {
@@ -406,7 +410,8 @@ a:active {
           .right-part .inner-container .fourth .second .inner .behaviour {
             margin-top: 6px; }
             .right-part .inner-container .fourth .second .inner .behaviour label {
-              float: left; }
+              float: left;
+              cursor: pointer; }
               .right-part .inner-container .fourth .second .inner .behaviour label span {
                 width: 15px;
                 height: 15px;
@@ -431,6 +436,147 @@ a:active {
               outline: none;
               background: #388ac1;
               color: #fff;
-              border-radius: 3px; }
+              border-radius: 3px;
+              cursor: pointer; }
+              .right-part .inner-container .fourth .second .inner .behaviour button:active {
+                background: #499bd2; }
+    .right-part .inner-container .last {
+      margin-top: 10px;
+      display: flex; }
+      .right-part .inner-container .last h3 {
+        height: 40px;
+        line-height: 40px;
+        background: #f4f5f6;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-left: 22px;
+        font-size: 14px;
+        color: #ccc;
+        border-bottom: 1px solid #ddd; }
+      .right-part .inner-container .last .calendar {
+        flex: 1 0 350px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        margin-right: 12px; }
+        .right-part .inner-container .last .calendar .select-group {
+          display: flex;
+          padding: 10px 22px; }
+          .right-part .inner-container .last .calendar .select-group select {
+            position: relative;
+            -webkit-appearance: none;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            outline: none;
+            height: 20px;
+            margin-right: 8px;
+            background-image: url("../images/calendar-arrow.png");
+            background-repeat: no-repeat;
+            cursor: pointer; }
+            .right-part .inner-container .last .calendar .select-group select:first-child {
+              width: 64px;
+              padding-left: 5px;
+              background-position: 50px 50%; }
+            .right-part .inner-container .last .calendar .select-group select:nth-child(2) {
+              width: 85px;
+              padding-left: 25px;
+              background-position: 50px 50%; }
+            .right-part .inner-container .last .calendar .select-group select:nth-child(3) {
+              width: 75px;
+              padding-left: 5px;
+              background-position: 60px 50%; }
+            .right-part .inner-container .last .calendar .select-group select:after {
+              position: absolute;
+              content: '1';
+              width: 1px;
+              height: 20px;
+              top: 0;
+              right: 30px; }
+          .right-part .inner-container .last .calendar .select-group button {
+            border-radius: 0;
+            width: 65px;
+            height: 20px;
+            outline: none;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer; }
+            .right-part .inner-container .last .calendar .select-group button:active {
+              background-color: #ddd; }
+        .right-part .inner-container .last .calendar .table {
+          padding: 0 22px 10px 22px; }
+          .right-part .inner-container .last .calendar .table tr {
+            margin-bottom: 2px;
+            display: block; }
+          .right-part .inner-container .last .calendar .table th {
+            width: 45px;
+            max-height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            border-top: 2px solid #b2cfed;
+            text-align: center; }
+          .right-part .inner-container .last .calendar .table td {
+            width: 45px;
+            max-height: 22px;
+            line-height: 22px;
+            text-align: center; }
+            .right-part .inner-container .last .calendar .table td.weekend time {
+              color: #cc3024; }
+            .right-part .inner-container .last .calendar .table td.holiday span {
+              color: #cc3024; }
+            .right-part .inner-container .last .calendar .table td.selected {
+              border: 1px solid #f8d573; }
+            .right-part .inner-container .last .calendar .table td time {
+              font-size: 12px; }
+            .right-part .inner-container .last .calendar .table td span {
+              display: block;
+              font-size: 12px; }
+      .right-part .inner-container .last .rank {
+        flex: 1 0 520px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background: #fff; }
+        .right-part .inner-container .last .rank .table {
+          padding: 20px 42px;
+          font-size: 12px; }
+          .right-part .inner-container .last .rank .table table {
+            width: 100%; }
+          .right-part .inner-container .last .rank .table th,
+          .right-part .inner-container .last .rank .table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            height: 25px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          .right-part .inner-container .last .rank .table tr {
+            display: flex; }
+          .right-part .inner-container .last .rank .table th:first-child,
+          .right-part .inner-container .last .rank .table td:first-child {
+            flex: 1 0 68px; }
+          .right-part .inner-container .last .rank .table th:nth-child(2),
+          .right-part .inner-container .last .rank .table td:nth-child(2) {
+            flex: 1 0 92px; }
+          .right-part .inner-container .last .rank .table th:last-child,
+          .right-part .inner-container .last .rank .table td:last-child {
+            flex: 1 0 270px; }
+          .right-part .inner-container .last .rank .table span {
+            height: 25px;
+            line-height: 25px;
+            margin-right: 15px; }
+          .right-part .inner-container .last .rank .table meter {
+            width: 165px;
+            height: 5px;
+            -webkit-appearance: none; }
+          .right-part .inner-container .last .rank .table meter::-webkit-meter-optimum-value {
+            background: #ed6e52; }
+          .right-part .inner-container .last .rank .table meter::-webkit-meter-suboptimum-value {
+            background: #f19f4f; }
+          .right-part .inner-container .last .rank .table meter::-webkit-meter-even-less-good-value {
+            background: #7fcbf0; }
+          .right-part .inner-container .last .rank .table tr:not(:first-child):hover {
+            background: #eee;
+            cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

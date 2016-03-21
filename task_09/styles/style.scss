@@ -3,6 +3,8 @@ $navHoverBackGround: #393d4e;
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 a,
@@ -49,13 +51,14 @@ a:active {
 //container
 .container {
 	width: 1280px;
+	min-height: 1280px;
 	margin: 0 auto;
 	display: flex;
 }
 
 .left-part {
 	width: 260px;
-	height: 100vh;
+	min-height: 1280px;
 	font-size: 12px;
 	background-color: $navBackGround;
 	display: flex;
@@ -472,6 +475,7 @@ a:active {
 							width: 100px;
 							height: 30px;
 							line-height: 30px;
+							font-size: 14px;
 							border: 1px solid #ddd;
 							text-align: center;
 							&:hover {
@@ -537,6 +541,7 @@ a:active {
 						margin-top: 6px;
 						label {
 							float: left;
+							cursor: pointer;
 							span {
 								width: 15px;
 								height: 15px;
@@ -567,7 +572,199 @@ a:active {
 							background: #388ac1;
 							color: #fff;
 							border-radius: 3px;
+							cursor: pointer;
+							&:active {
+								background: #499bd2;
+							}
 						}
+					}
+				}
+			}
+		}
+
+		.last {
+			margin-top: 10px;
+			display: flex;
+			h3 {
+				height: 40px;
+				line-height: 40px;
+				background: #f4f5f6;
+				border-top-left-radius: 15px;
+				border-top-right-radius: 15px;
+				padding-left: 22px;
+				font-size: 14px;
+				color: #ccc;
+				border-bottom: 1px solid #ddd;
+			}
+			.calendar {
+				$weekendColor: #cc3024;
+				flex: 1 0 350px;
+				border-radius: 10px;
+				border: 1px solid #ddd;
+				background: #fff;
+				margin-right: 12px;
+				.select-group {
+					display: flex;
+					padding: 10px 22px;
+					select {
+						position: relative;
+						-webkit-appearance: none;
+						border: 1px solid #ddd;
+						border-radius: 0;
+						outline: none;
+						height: 20px;
+						margin-right: 8px;
+						background-image: url('../images/calendar-arrow.png');
+						background-repeat: no-repeat;
+						cursor: pointer;
+						&:first-child {
+							width: 64px;
+							padding-left: 5px;
+							background-position: 50px 50%;
+						}
+						&:nth-child(2) {
+							width: 85px;
+							padding-left: 25px;
+							background-position: 50px 50%;
+						}
+						&:nth-child(3) {
+							width: 75px;
+							padding-left: 5px;
+							background-position: 60px 50%;
+						}
+						&:after {
+							position: absolute;
+							content: '1';
+							width: 1px;
+							height: 20px;
+							top: 0;
+							right: 30px;
+						}
+					}
+					button {
+						border-radius: 0;
+						width: 65px;
+						height: 20px;
+						outline: none;
+						border: 1px solid #ddd;
+						background: #fff;
+						cursor: pointer;
+						&:active {
+							background-color: #ddd;
+						}
+					}
+				}
+				.table {
+					padding: 0 22px 10px 22px;
+					tr {
+						margin-bottom: 2px;
+						display: block;
+					}
+					th {
+						width: 45px;
+						max-height: 30px;
+						line-height: 30px;
+						text-align: center;
+						border-bottom: 2px solid #ddd;
+						border-top: 2px solid #b2cfed;
+						text-align: center;
+					}
+					td {
+						width: 45px;
+						max-height: 22px;
+						line-height: 22px;
+						text-align: center;
+						&.weekend {
+							time {
+								color: $weekendColor;
+							}
+						}
+						&.holiday {
+							span {
+								color: $weekendColor;
+							}
+						}
+						&.selected {
+							border: 1px solid #f8d573;
+						}
+
+						time {
+							font-size: 12px;
+						}
+						span {
+							display: block;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+			.rank {
+				flex: 1 0 520px;
+				border-radius: 10px;
+				border: 1px solid #ddd;
+				background: #fff;
+
+				.table {
+					padding: 20px 42px;
+					font-size: 12px;
+					table {
+						width: 100%;
+					}
+					th,
+					td {
+						border: 1px solid #ddd;
+						text-align: center;
+						height: 25px;
+						line-height: 25px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+					tr {
+						display: flex;
+					}
+					th,
+					td {
+						&:first-child {
+							// width: 68px;
+							flex: 1 0 68px;
+						}
+						&:nth-child(2) {
+							// width: 92px;
+							flex: 1 0 92px;
+						}
+						&:last-child {
+							// width: 290px;
+							flex: 1 0 270px;
+						}
+					}
+					span {
+						height: 25px;
+						line-height: 25px;
+						margin-right: 15px;
+					}
+					meter {
+						width: 165px;
+						height: 5px;
+						-webkit-appearance: none;
+					}
+					meter::-webkit-meter-optimum-value {
+						background: #ed6e52;
+					}
+
+
+					meter::-webkit-meter-suboptimum-value {
+						background: #f19f4f;
+					}
+
+
+					meter::-webkit-meter-even-less-good-value {
+						background: #7fcbf0;
+					}
+
+					tr:not(:first-child):hover {
+						background: #eee;
+						cursor: pointer;
 					}
 				}
 			}
