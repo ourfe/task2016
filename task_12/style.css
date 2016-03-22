@@ -1,0 +1,77 @@
+thead th {
+  background: #000;
+  color: #fff;
+  text-align: left; }
+
+tbody tr:nth-child(even) {
+  background: #ddd; }
+tbody tr:nth-child(odd) {
+  background: #fff; }
+tbody tr:nth-child(-n+3) {
+  color: #f00; }
+
+input[type="text"] {
+  margin: 100px 0;
+  transition: width 1s;
+  width: 150px;
+  outline: none; }
+  input[type="text"]:focus {
+    width: 250px; }
+
+.slide {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden; }
+  .slide input {
+    display: none; }
+  .slide .bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute; }
+    .slide .bg ul {
+      width: 300%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: left 1s; }
+      .slide .bg ul li {
+        float: left;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: #fff; }
+        .slide .bg ul li:first-child {
+          background: #f00; }
+        .slide .bg ul li:nth-child(2) {
+          background: #0f0; }
+        .slide .bg ul li:last-child {
+          background: #00f; }
+  .slide .control {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .slide .control label {
+      width: 20px;
+      height: 20px;
+      background: rgba(200, 200, 200, 0.8);
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block; }
+
+#slider1:checked ~ .bg ul {
+  left: 0; }
+
+#slider2:checked ~ .bg ul {
+  left: -100%; }
+
+#slider3:checked ~ .bg ul {
+  left: -200%; }
+
+/*# sourceMappingURL=style.css.map */
