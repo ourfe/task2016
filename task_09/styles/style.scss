@@ -127,6 +127,9 @@ a:active {
 			&:not(:first-child) {
 				line-height: 46px;
 			}
+			&:first-child {
+				background: $navHoverBackGround;
+			}
 			& > ul {
 				padding-left: 25px;
 				li {
@@ -135,7 +138,7 @@ a:active {
 					}
 					span {
 						padding-left: 20px;
-						background: $navBackGround url('../images/icon-folder.png') no-repeat 0 50%;
+						background: $navHoverBackGround url('../images/icon-folder.png') no-repeat 0 50%;
 					}
 					ul {
 						padding-left: 32px;
@@ -143,7 +146,7 @@ a:active {
 					}
 					li {
 						padding-left: 16px;
-						background: $navBackGround url('../images/icon-doc.png') no-repeat 0 50%;
+						background: $navHoverBackGround url('../images/icon-doc.png') no-repeat 0 50%;
 					}
 					&:hover {
 						color: #fff;
@@ -153,7 +156,7 @@ a:active {
 			&:first-child {
 				& > span {
 					padding-left: 25px;
-					background: $navBackGround url('../images/icon-chart.png') no-repeat 0 50%;
+					background: $navHoverBackGround url('../images/icon-chart.png') no-repeat 0 50%;
 				}
 				li.active img {
 					transform: rotate(90deg);
@@ -179,9 +182,6 @@ a:active {
 				padding-left: 25px;
 				background: $navBackGround url('../images/icon-account.png') no-repeat 0 50%;
 			}
-		}
-		.second-class-list {
-
 		}
 	}
 }

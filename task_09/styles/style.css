@@ -104,23 +104,25 @@ a:active {
     line-height: 36px; }
     .left-part nav > ul > li:not(:first-child) {
       line-height: 46px; }
+    .left-part nav > ul > li:first-child {
+      background: #393d4e; }
     .left-part nav > ul > li > ul {
       padding-left: 25px; }
       .left-part nav > ul > li > ul li img {
         margin-right: 10px; }
       .left-part nav > ul > li > ul li span {
         padding-left: 20px;
-        background: #2b2f3d url("../images/icon-folder.png") no-repeat 0 50%; }
+        background: #393d4e url("../images/icon-folder.png") no-repeat 0 50%; }
       .left-part nav > ul > li > ul li ul {
         padding-left: 32px; }
       .left-part nav > ul > li > ul li li {
         padding-left: 16px;
-        background: #2b2f3d url("../images/icon-doc.png") no-repeat 0 50%; }
+        background: #393d4e url("../images/icon-doc.png") no-repeat 0 50%; }
       .left-part nav > ul > li > ul li:hover {
         color: #fff; }
     .left-part nav > ul > li:first-child > span {
       padding-left: 25px;
-      background: #2b2f3d url("../images/icon-chart.png") no-repeat 0 50%; }
+      background: #393d4e url("../images/icon-chart.png") no-repeat 0 50%; }
     .left-part nav > ul > li:first-child li.active img {
       transform: rotate(90deg); }
     .left-part nav > ul > li:nth-child(2) > span {
