@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .container div {
+    border: 1px solid #f00;
+    flex-basis: 150px;
+    flex-shrink: 0;
+    margin-bottom: 20px; }
+  .container .one {
+    height: 120px; }
+  .container .two {
+    height: 100px; }
+  .container .three {
+    height: 40px; }
+  .container .four {
+    height: 200px;
+    border: 1px solid #00f; }
+
+@media screen and (max-width: 640px) {
+  .container {
+    align-items: flex-start;
+    flex-wrap: wrap; }
+
+  .four {
+    order: -1; } }
+
+/*# sourceMappingURL=style.css.map */
