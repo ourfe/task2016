@@ -1,0 +1,123 @@
+/* 下面是头部导航部分的css样式 */
+
+
+body{
+    margin: 0;
+    background-color: #DEDEDE;
+}
+
+#top{
+    margin: 0;
+    background-color:#E99871;
+    height: 70px;
+}
+
+.img{
+    padding-top: 4px;
+}
+
+
+#top nav ul li,nav{
+    float: right;
+    padding-top: 4px;
+}
+
+#li1{
+    position: relative;
+    right: 26px;
+}
+#li2 {
+    position: relative;
+    right: 52px;
+}
+#li3 {
+    position: relative;
+    right: 78px;
+}
+#li4 {
+    position: relative;
+    right: 104px;
+}
+
+
+a:visited{
+    color: #ccc;
+}
+a,a:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* 下面是主体部分 */
+
+
+h2{
+    margin-top: 0;
+}
+
+.article{
+    background-color: white;
+    margin: 22px;
+    padding: 22px;
+    border-right: solid 2px #848484;
+    border-bottom: solid 2px #848484;
+}
+
+
+
+/*下面是表单的样式*/
+
+
+.from_style>label,.from_style label>p{
+    display: block;
+    position: relative;
+    left: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.from_style label>p{
+    color: #A1A0A6;
+}
+
+
+.from_style label>span{
+    float: left;       /*不懂这里*/
+    width: 20%;
+    text-align: right;
+}
+
+.radio p{
+    display: inline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #D88812;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+/*下面是脚部样式*/
+
+
+#footer{
+    height: 70px;
+    background-color: #E99871;
+    text-align: center;
+}
+#footer_content{
+    display: inline;
+    font-size: 14px;
+    color: white;
+}
+
